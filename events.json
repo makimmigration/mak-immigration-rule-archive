@@ -1,11 +1,11 @@
 {
   "archive": {
     "name": "MAK Canadian Immigration Rule Change Archive",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "released": "2026-09-11",
-    "coverage": "Seed release: selected material federal IRCC rule and policy changes. Ontario and Saskatchewan monitoring are enabled for future verified entries.",
+    "coverage": "Selected material federal IRCC rule and policy changes plus verified Saskatchewan SINP operational changes. Ontario monitoring remains enabled for future verified material entries.",
     "principle": "Preserve each verified change as a dated event. Never overwrite history when a later rule supersedes it.",
-    "last_verified_at": "2026-09-11T20:52:47+05:00"
+    "last_verified_at": "2026-09-11T21:14:50+05:00"
   },
   "events": [
     {
@@ -256,6 +256,32 @@
         "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/workers-study-without-study-permit.html",
         "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/economic-growth-public-services-contributions-temporary-workers.html",
         "https://laws-lois.justice.gc.ca/eng/regulations/sor-2002-227/section-188.html"
+      ],
+      "evidence_status": "OFFICIAL_VERIFIED",
+      "last_verified_at": "2026-09-11"
+    },
+    {
+      "id": "sk-sinp-capped-sector-final-intake-2026-09-14",
+      "jurisdiction": "Saskatchewan",
+      "authority": "Government of Saskatchewan, Saskatchewan Immigrant Nominee Program",
+      "topic_key": "sinp-capped-sector-intakes-2026",
+      "topic": "SINP 2026 capped-sector intake schedule",
+      "change_type": "final_intake_schedule_announced",
+      "announcement_date": null,
+      "rule_observed_from": "2026-09-11",
+      "effective_from": null,
+      "effective_to": null,
+      "date_basis": "Current SINP Processing Statistics and OASIS registration pages verified September 11, 2026 state that September 14-15 is the final 2026 capped-sector intake and that nomination spaces previously allocated for later intakes were moved into September. Neither current page states when this schedule change was first published or a separate change-effective date, so effective_from is left null.",
+      "status": "announced_future_current",
+      "previous_rule": "The current official page itself confirms that nomination spaces had previously been allocated to later 2026 intakes. This archive does not reconstruct or assign an end date to that earlier schedule because the current official evidence does not state when the revised schedule was first published.",
+      "new_rule": "SINP states that the final capped-sector intake for 2026 will occur on September 14 and 15. On September 14 at 9:30 a.m., Trucking has a 150-position limit and Retail has 175; Accommodation opens at 1:30 p.m. with 50 positions. Food Services opens September 15 at 1:30 p.m. with 175 positions. SINP states that nomination spaces previously allocated for later intakes will be made available in September.",
+      "transition_rule": "For capped sectors, SINP states that employers can submit only during an active intake window and only for candidates with six months or less remaining on a valid work permit. Positions are first-come, first-served. The SINP OASIS registration page states that capped-sector EPAs submitted outside an active intake period, or for candidates whose work permits expire more than six months from the submission date, will be closed and returned.",
+      "supersedes_event_id": null,
+      "superseded_by_event_id": null,
+      "controlling_source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/sinp-processing-statistics",
+      "supporting_source_urls": [
+        "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/hire-a-foreign-worker/recruit-and-hire-workers-with-sinp/hiring-workers-for-permanent-jobs",
+        "https://immigration.saskatchewan.ca/apex/f?p=305:104:0::NO:"
       ],
       "evidence_status": "OFFICIAL_VERIFIED",
       "last_verified_at": "2026-09-11"
