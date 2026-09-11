@@ -1,6 +1,6 @@
 # MAK Canadian Immigration Rule Change Archive
 
-Version: 0.1.0  
+Version: 0.2.0  
 Seed release: 2026-09-11  
 Public site: https://makimmigration.github.io/mak-immigration-rule-archive/
 
@@ -79,11 +79,11 @@ A result means the archive contains a verified record for that topic/date. A mis
 
 Current official government sources always control if they conflict with this archive.
 
-## Coverage of v0.1.0
+## Coverage of v0.2.0
 
-The seed release contains 10 selected material federal IRCC events from November 2024 through September 2026, including PGWP eligibility and field-of-study changes, family open-work-permit changes, Express Entry arranged-employment CRS changes, 2026 category-based selection changes, selected 2026 targeted work-permit measures, and the September 2026 temporary public policy for short-term study by valid work-permit holders.
+The v0.2.0 release contains 11 selected material events: 10 federal IRCC/Canada entries from November 2024 through September 2026 and one verified Saskatchewan SINP operational update for the final 2026 capped-sector intake.
 
-The seed release is **not a complete history of Canadian immigration law or policy**. Ontario and Saskatchewan monitoring are enabled for future verified material entries; additional federal and provincial historical backfill will be added only where dates and supersession can be supported from official sources.
+The archive is **not a complete history of Canadian immigration law or policy**. Saskatchewan coverage has begun but is not a complete historical reconstruction. Ontario monitoring remains enabled for future verified material entries; additional federal and provincial historical backfill will be added only where dates and supersession can be supported from official sources.
 
 ## Machine-readable access
 
@@ -110,4 +110,4 @@ Users may cite the archive as a MAK-curated research reference, but the underlyi
 
 Suggested reference:
 
-> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.1.0, 2026-09-11. Individual entries cite the controlling official government source.
+> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.2.0, 2026-09-11. Individual entries cite the controlling official government source.
