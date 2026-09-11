@@ -1,7 +1,8 @@
 # MAK Canadian Immigration Rule Change Archive
 
 Version: 0.1.0  
-Seed release: 2026-09-11
+Seed release: 2026-09-11  
+Public site: https://makimmigration.github.io/mak-immigration-rule-archive/
 
 ## Purpose
 
@@ -80,7 +81,7 @@ Current official government sources always control if they conflict with this ar
 
 ## Coverage of v0.1.0
 
-The seed release contains selected material federal IRCC events from November 2024 through June 2026, including PGWP eligibility and field-of-study changes, family open-work-permit changes, Express Entry arranged-employment CRS changes, 2026 category-based selection changes, and selected 2026 targeted work-permit measures.
+The seed release contains 10 selected material federal IRCC events from November 2024 through September 2026, including PGWP eligibility and field-of-study changes, family open-work-permit changes, Express Entry arranged-employment CRS changes, 2026 category-based selection changes, selected 2026 targeted work-permit measures, and the September 2026 temporary public policy for short-term study by valid work-permit holders.
 
 The seed release is **not a complete history of Canadian immigration law or policy**. Ontario and Saskatchewan monitoring are enabled for future verified material entries; additional federal and provincial historical backfill will be added only where dates and supersession can be supported from official sources.
 
