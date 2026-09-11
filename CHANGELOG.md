@@ -1,5 +1,22 @@
 # Version history
 
+## v0.2.0 — 2026-09-11
+
+Expanded verified coverage to Saskatchewan SINP.
+
+### Added
+
+- Added `sk-sinp-capped-sector-final-intake-2026-09-14`: current SINP Processing Statistics and OASIS pages state that September 14–15 is the final 2026 capped-sector intake, with nomination spaces previously allocated for later intakes moved into September.
+- Recorded sector windows and limits: Trucking 150 and Retail 175 at 9:30 a.m. September 14; Accommodation 50 at 1:30 p.m. September 14; Food Services 175 at 1:30 p.m. September 15.
+- Preserved filing constraints: active intake window only, six months or less remaining on a valid work permit, first-come first-served, with OASIS indicating out-of-window EPAs or cases with more than six months remaining will be closed and returned.
+
+### Date treatment
+
+- `announcement_date` remains `null` because the current official pages do not state when this schedule revision was first published.
+- `rule_observed_from` is 2026-09-11, the date this archive verified the current official rule state.
+- `effective_from` remains `null`; September 14–15 are operational intake dates, not asserted by the archive as a separate change-effective date.
+- No supersession link is created because the prior intake schedule is not independently archived with a defensible end date.
+
 ## v0.1.0 — 2026-09-11
 
 First public seed release of the MAK Canadian Immigration Rule Change Archive.
