@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite the archive version and the controlling official government source for the rule you rely on."
+title: "Canadian Immigration Rule Change Archive"
+type: dataset
+version: "0.1.0"
+date-released: 2026-09-11
+authors:
+  - name: "MAK Canadian Immigration Services, Immigration Data Observatory"
+url: "https://makimmigration.github.io/mak-immigration-rule-archive/"
+repository-code: "https://github.com/makimmigration/mak-immigration-rule-archive"
+license: CC-BY-4.0
+abstract: "A versioned research archive of selected material Canadian immigration rule and policy changes, preserving effective dates, superseded states, transition rules and controlling official government sources."
