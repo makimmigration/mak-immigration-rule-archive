@@ -1,5 +1,26 @@
 # Version history
 
+## v0.3.0 — 2026-09-13
+
+Expanded verified public-policy coverage with the Manitoba Workforce Transition Bridge.
+
+### Added
+
+- Added `ca-manitoba-workforce-transition-bridge-2026-07-06`, controlled by IRCC's signed A25.2 Manitoba Workforce Transition Bridge public policy.
+- Recorded the legal effective date as July 6, 2026 because the policy states it comes into effect on the date signed and is dated July 6, 2026.
+- Recorded the policy expiry as December 31, 2027 unless revoked earlier.
+- Preserved the defined cohort and evidence controls: Manitoba support letter issued on or before December 31, 2025, MPNP EOI placement on or before December 31, 2025, and a letter of employment from the current employer.
+- Preserved the distinct restoration/work-authorization situations in the policy rather than reducing them to a generic 'all Manitoba workers qualify' rule.
+- Added IRCC's operational support-letter page as supporting evidence, including the current statement that the resulting open work permit may be issued for up to two years and that the measure is not for applicants already nominated by a province or territory.
+
+### Date treatment
+
+- `announcement_date` is left `null`: the signed policy and later Canada.ca publication pages establish the policy/effective dates, but this archive does not infer a separate announcement date.
+- `rule_observed_from` is 2026-07-06 because the signed policy itself establishes the rule from that date.
+- `effective_from` is 2026-07-06.
+- `effective_to` is 2027-12-31.
+- No unsupported supersession relationship is asserted with the archived 2024 prospective-PNP public policy; the 2026 policy expressly builds on an earlier measure but defines a new Manitoba-specific cohort and conditions.
+
 ## v0.2.0 — 2026-09-11
 
 Expanded verified coverage to Saskatchewan SINP.
