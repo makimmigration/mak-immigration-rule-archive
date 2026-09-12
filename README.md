@@ -1,6 +1,6 @@
 # MAK Canadian Immigration Rule Change Archive
 
-Version: 0.4.0  
+Version: 0.5.0  
 Seed release: 2026-09-11  
 Public site: https://makimmigration.github.io/mak-immigration-rule-archive/
 
@@ -33,7 +33,7 @@ When a later rule supersedes an archived rule:
 - the newer event uses `supersedes_event_id` to point back where the relationship is clear;
 - both records keep their own controlling official source and verification date.
 
-If an official source later corrects itself or clarifies a date, the archive records that as a versioned correction rather than pretending the earlier archive entry never existed.
+If an official source later corrects itself, contains an internal anomaly, or clarifies a date, the archive records that explicitly rather than silently normalizing the source.
 
 ## Date discipline
 
@@ -79,15 +79,18 @@ A result means the archive contains a verified record for that topic/date. A mis
 
 Current official government sources always control if they conflict with this archive.
 
-## Coverage of v0.4.0
+## Coverage of v0.5.0
 
-The v0.4.0 release contains **17 selected material events**. In addition to the seed federal/Express Entry/PGWP/family-work-permit records and the Saskatchewan/Manitoba entries, this release adds five verified official-source public-policy records:
+The v0.5.0 release contains **20 selected material events**. In addition to the seed federal/Express Entry/PGWP/family-work-permit records and the Saskatchewan/Manitoba entries, the archive now includes:
 
-1. the historical 2023 temporary study-permit exemption for certain work permit holders, including its June 27, 2026 expiry;
-2. the construction-trade apprentice study-without-study-permit measure running from February 26, 2025 to February 26, 2027;
-3. the June 5, 2026 Quebec PSTQ prospective-permanent-residence work-permit public policy, including principal-worker and spouse/common-law-partner facilitation and its replacement of the March 12 predecessor;
-4. the June 25, 2026 updated FMCSP study-permit public policy, with part-specific expiry dates and annual Part A caps preserved;
-5. the June 25, 2026 updated FMCSP permanent-residence/open-work-permit public policy, expiring November 30, 2032 unless revoked earlier.
+- the expired 2023 worker-study public policy;
+- the construction-apprentice study-without-study-permit measure;
+- the March 13, 2026 Quebec PSTQ work-permit predecessor and its June 5, 2026 successor, linked as an explicit supersession chain;
+- the September 18, 2025 FMCSP study-permit predecessor and the June 25, 2026 updated study-permit policy, linked as an explicit supersession chain;
+- the September 18, 2025 FMCSP PR/open-work-permit predecessor and the June 25, 2026 updated PR/open-work-permit policy, linked as an explicit supersession chain;
+- the Quebec spouse/common-law-partner measure and other current 2026 public-policy records already present in earlier releases.
+
+The archived 2025 FMCSP PR policy displays the impossible calendar date `November 31, 2031` as its nominal expiry. The archive does **not** silently convert that to another date. Instead, the record notes the source anomaly and bounds the historical active state by the verified June 25, 2026 successor that expressly revoked and replaced it.
 
 The archive deliberately keeps the expired 2023 worker-study measure separate from the different September 2026 short-study policy. Similar subject matter does not mean the eligibility mechanisms or transition rules are identical.
 
@@ -118,4 +121,4 @@ Users may cite the archive as a MAK-curated research reference, but the underlyi
 
 Suggested reference:
 
-> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.4.0, 2026-09-13. Individual entries cite the controlling official government source.
+> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.5.0, 2026-09-13. Individual entries cite the controlling official government source.
