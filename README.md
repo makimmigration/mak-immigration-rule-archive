@@ -1,6 +1,6 @@
 # MAK Canadian Immigration Rule Change Archive
 
-Version: 0.2.0  
+Version: 0.3.0  
 Seed release: 2026-09-11  
 Public site: https://makimmigration.github.io/mak-immigration-rule-archive/
 
@@ -79,11 +79,13 @@ A result means the archive contains a verified record for that topic/date. A mis
 
 Current official government sources always control if they conflict with this archive.
 
-## Coverage of v0.2.0
+## Coverage of v0.3.0
 
-The v0.2.0 release contains 11 selected material events: 10 federal IRCC/Canada entries from November 2024 through September 2026 and one verified Saskatchewan SINP operational update for the final 2026 capped-sector intake.
+The v0.3.0 release contains 12 selected material events: 11 federal IRCC/Canada or Saskatchewan events from November 2024 through September 2026 plus a verified Manitoba Workforce Transition Bridge public-policy record effective July 6, 2026.
 
-The archive is **not a complete history of Canadian immigration law or policy**. Saskatchewan coverage has begun but is not a complete historical reconstruction. Ontario monitoring remains enabled for future verified material entries; additional federal and provincial historical backfill will be added only where dates and supersession can be supported from official sources.
+The Manitoba record preserves the distinction between the policy's July 6, 2026 legal effective date and its later Canada.ca publication/operational pages. It records the time-limited open-work-permit facilitation for the defined Manitoba cohort, the December 31, 2025 support-letter/EOI cut-offs, current-employer evidence requirement, restoration-related exemptions where applicable, and December 31, 2027 expiry.
+
+The archive is **not a complete history of Canadian immigration law or policy**. Saskatchewan and Manitoba coverage has begun but is not a complete provincial historical reconstruction. Ontario monitoring remains enabled for future verified material entries; additional federal and provincial historical backfill will be added only where dates and supersession can be supported from official sources.
 
 ## Machine-readable access
 
@@ -110,4 +112,4 @@ Users may cite the archive as a MAK-curated research reference, but the underlyi
 
 Suggested reference:
 
-> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.2.0, 2026-09-11. Individual entries cite the controlling official government source.
+> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.3.0, 2026-09-13. Individual entries cite the controlling official government source.
