@@ -1,5 +1,24 @@
 # Version history
 
+## v0.4.0 — 2026-09-13
+
+Expanded the archive with five additional official-source public-policy records and historical transition states.
+
+### Added
+
+- `ca-worker-study-exemption-2023-06-27`: preserved IRCC's 2023 worker-study public policy as an expired historical rule state. The policy took effect June 27, 2023, required the relevant work-permit application or renewal to have been received on or before June 7, 2023, and expired June 27, 2026.
+- `ca-construction-apprentice-study-exemption-2025-02-26`: added the current construction-trade apprentice study-without-study-permit measure. IRCC states it started February 26, 2025 and remains open through February 26, 2027; applicants must have a valid work permit, an eligible construction occupation and a registered apprenticeship agreement.
+- `ca-quebec-pstq-work-permit-public-policy-2026-06-05`: added the signed Quebec PSTQ prospective-permanent-residence work-permit public policy, including the principal-worker cohorts, spouse/common-law-partner facilitation and the explicit replacement of the March 12, 2026 predecessor.
+- `ca-fmcsp-study-permit-policy-2026-06-25`: added the updated Francophone Minority Communities Student Pilot study-permit public policy. The archive preserves the June 25, 2026 effective date, Part A's August 25, 2027 expiry, Parts B/C linkage to the November 30, 2032 companion-policy expiry, and the two annual 2,970-application Part A caps.
+- `ca-fmcsp-pr-owp-policy-2026-06-25`: added the updated FMCSP permanent-residence/open-work-permit public policy, including the qualifying graduate framework, pending-PR open-work-permit facilitation, accompanying-family facilitation and November 30, 2032 expiry.
+
+### Transition controls
+
+- The expired 2023 worker-study measure is not falsely treated as the same mechanism as the different September 2026 short-study policy. Their eligibility structures and dates differ.
+- The Quebec June 5 policy states that it revokes and replaces a March 12, 2026 predecessor and applies to pending applications under that predecessor. The archive records that fact but does not create a formal `supersedes_event_id` until the predecessor itself has a complete archived event.
+- The FMCSP June 25 study and PR/OWP policies each expressly revoke and replace September 18, 2025 predecessors. Those predecessor rule records remain a future historical-backfill item rather than being represented by unsupported synthetic entries.
+- The FMCSP study policy has part-specific expiry dates, so the record-level `effective_to` remains null and the exact expiry architecture is preserved in the date and transition fields.
+
 ## v0.3.0 — 2026-09-13
 
 Expanded verified public-policy coverage with the Manitoba Workforce Transition Bridge.
