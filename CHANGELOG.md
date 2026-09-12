@@ -1,5 +1,25 @@
 # Version history
 
+## v0.5.0 — 2026-09-13
+
+Added three archived predecessor public policies and converted three previously descriptive replacement statements into explicit machine-readable supersession chains.
+
+### Added
+
+- `ca-quebec-pstq-work-permit-public-policy-2026-03-13`: archived the March 12-signed / March 13-effective Quebec PSTQ employer-specific work-permit public policy that preceded the June 5 replacement.
+- `ca-fmcsp-study-permit-policy-2025-09-18`: archived the September 18, 2025 FMCSP study-permit public policy, including its annual processing caps and treatment of pending applications under the August 2024 predecessor.
+- `ca-fmcsp-pr-policy-2025-09-18`: archived the September 18, 2025 FMCSP permanent-residence/open-work-permit public policy.
+
+### Supersession chains
+
+- Quebec PSTQ: `ca-quebec-pstq-work-permit-public-policy-2026-03-13` -> `ca-quebec-pstq-work-permit-public-policy-2026-06-05`.
+- FMCSP study: `ca-fmcsp-study-permit-policy-2025-09-18` -> `ca-fmcsp-study-permit-policy-2026-06-25`.
+- FMCSP PR/OWP: `ca-fmcsp-pr-policy-2025-09-18` -> `ca-fmcsp-pr-owp-policy-2026-06-25`.
+
+### Source-quality control
+
+The archived 2025 FMCSP PR policy prints `November 31, 2031` as its nominal expiry. Because that is not a valid calendar date, this archive does not silently normalize it. The event records the source anomaly and uses the verified June 25, 2026 successor to bound the predecessor's historical active state through June 24, 2026.
+
 ## v0.4.0 — 2026-09-13
 
 Expanded the archive with five additional official-source public-policy records and historical transition states.
@@ -15,8 +35,8 @@ Expanded the archive with five additional official-source public-policy records 
 ### Transition controls
 
 - The expired 2023 worker-study measure is not falsely treated as the same mechanism as the different September 2026 short-study policy. Their eligibility structures and dates differ.
-- The Quebec June 5 policy states that it revokes and replaces a March 12, 2026 predecessor and applies to pending applications under that predecessor. The archive records that fact but does not create a formal `supersedes_event_id` until the predecessor itself has a complete archived event.
-- The FMCSP June 25 study and PR/OWP policies each expressly revoke and replace September 18, 2025 predecessors. Those predecessor rule records remain a future historical-backfill item rather than being represented by unsupported synthetic entries.
+- The Quebec June 5 policy states that it revokes and replaces a March 12, 2026 predecessor and applies to pending applications under that predecessor.
+- The FMCSP June 25 study and PR/OWP policies each expressly revoke and replace September 18, 2025 predecessors.
 - The FMCSP study policy has part-specific expiry dates, so the record-level `effective_to` remains null and the exact expiry architecture is preserved in the date and transition fields.
 
 ## v0.3.0 — 2026-09-13
@@ -38,7 +58,6 @@ Expanded verified public-policy coverage with the Manitoba Workforce Transition 
 - `rule_observed_from` is 2026-07-06 because the signed policy itself establishes the rule from that date.
 - `effective_from` is 2026-07-06.
 - `effective_to` is 2027-12-31.
-- No unsupported supersession relationship is asserted with the archived 2024 prospective-PNP public policy; the 2026 policy expressly builds on an earlier measure but defines a new Manitoba-specific cohort and conditions.
 
 ## v0.2.0 — 2026-09-11
 
@@ -49,13 +68,6 @@ Expanded verified coverage to Saskatchewan SINP.
 - Added `sk-sinp-capped-sector-final-intake-2026-09-14`: current SINP Processing Statistics and OASIS pages state that September 14–15 is the final 2026 capped-sector intake, with nomination spaces previously allocated for later intakes moved into September.
 - Recorded sector windows and limits: Trucking 150 and Retail 175 at 9:30 a.m. September 14; Accommodation 50 at 1:30 p.m. September 14; Food Services 175 at 1:30 p.m. September 15.
 - Preserved filing constraints: active intake window only, six months or less remaining on a valid work permit, first-come first-served, with OASIS indicating out-of-window EPAs or cases with more than six months remaining will be closed and returned.
-
-### Date treatment
-
-- `announcement_date` remains `null` because the current official pages do not state when this schedule revision was first published.
-- `rule_observed_from` is 2026-09-11, the date this archive verified the current official rule state.
-- `effective_from` remains `null`; September 14–15 are operational intake dates, not asserted by the archive as a separate change-effective date.
-- No supersession link is created because the prior intake schedule is not independently archived with a defensible end date.
 
 ## v0.1.0 — 2026-09-11
 
@@ -86,7 +98,7 @@ First public seed release of the MAK Canadian Immigration Rule Change Archive.
 
 ### Material update — 2026-09-11
 
-- Added `ca-work-permit-short-study-2026-09-04`: IRCC's temporary public policy for valid work permit holders to study in a course or program lasting six months or less without a study permit. The signed policy was dated 2026-08-05, came into effect 2026-09-04, was publicly announced/observed on 2026-09-09, and expires 2027-12-31 unless revoked earlier. The controlling source is IRCC's signed temporary public policy under A25.2 exempting the R188(1)(c) completion-within-authorized-stay requirement for eligible permit holders.
+- Added `ca-work-permit-short-study-2026-09-04`: IRCC's temporary public policy for valid work permit holders to study in a course or program lasting six months or less without a study permit. The signed policy was dated 2026-08-05, came into effect 2026-09-04, was publicly announced/observed on 2026-09-09, and expires 2027-12-31 unless revoked earlier.
 
 ### Coverage warning
 
