@@ -17,7 +17,14 @@
     "current_vs_superseded_csv": "https://makimmigration.github.io/mak-immigration-rule-archive/current-vs-superseded.csv",
     "transition_chains": "https://makimmigration.github.io/mak-immigration-rule-archive/transition-chains.html",
     "transition_chains_csv": "https://makimmigration.github.io/mak-immigration-rule-archive/transition-chains.csv",
-    "official_source_index": "https://makimmigration.github.io/mak-immigration-rule-archive/official-source-index.html"
+    "official_source_index": "https://makimmigration.github.io/mak-immigration-rule-archive/official-source-index.html",
+    "research_briefs": "https://makimmigration.github.io/mak-immigration-rule-archive/research-briefs.html",
+    "research_brief_map_csv": "https://makimmigration.github.io/mak-immigration-rule-archive/research-briefs.csv",
+    "pgwp_brief": "https://makimmigration.github.io/mak-immigration-rule-archive/brief-pgwp.html",
+    "family_open_work_permit_brief": "https://makimmigration.github.io/mak-immigration-rule-archive/brief-family-open-work-permits.html",
+    "international_student_brief": "https://makimmigration.github.io/mak-immigration-rule-archive/brief-international-students.html",
+    "pnp_2026_brief": "https://makimmigration.github.io/mak-immigration-rule-archive/brief-pnp-2026.html",
+    "express_entry_brief": "https://makimmigration.github.io/mak-immigration-rule-archive/brief-express-entry.html"
   },
   "research_controls": {
     "researcher_kit": "https://makimmigration.github.io/mak-immigration-rule-archive/researcher-kit.html",
