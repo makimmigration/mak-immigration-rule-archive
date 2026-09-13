@@ -1,6 +1,6 @@
 # MAK Canadian Immigration Rule Change Archive
 
-Version: 0.5.0  
+Version: 0.6.0  
 Seed release: 2026-09-11  
 Public site: https://makimmigration.github.io/mak-immigration-rule-archive/
 
@@ -79,9 +79,9 @@ A result means the archive contains a verified record for that topic/date. A mis
 
 Current official government sources always control if they conflict with this archive.
 
-## Coverage of v0.5.0
+## Coverage of v0.6.0
 
-The v0.5.0 release contains **20 selected material events**. In addition to the seed federal/Express Entry/PGWP/family-work-permit records and the Saskatchewan/Manitoba entries, the archive now includes:
+The v0.6.0 release contains **24 selected material events**. In addition to the seed federal/Express Entry/PGWP/family-work-permit records and the Saskatchewan/Manitoba entries, the archive now includes:
 
 - the expired 2023 worker-study public policy;
 - the construction-apprentice study-without-study-permit measure;
@@ -92,9 +92,12 @@ The v0.5.0 release contains **20 selected material events**. In addition to the 
 
 The archived 2025 FMCSP PR policy displays the impossible calendar date `November 31, 2031` as its nominal expiry. The archive does **not** silently convert that to another date. Instead, the record notes the source anomaly and bounds the historical active state by the verified June 25, 2026 successor that expressly revoked and replaced it.
 
+
+This release also adds IRCC's August 28, 2024 termination of the visitor in-Canada work-permit temporary public policy and reconstructs the Ontario OINP redesign implementation milestones of May 30, June 25 and August 4, 2026, including the former-stream EOI/application transition rules.
+
 The archive deliberately keeps the expired 2023 worker-study measure separate from the different September 2026 short-study policy. Similar subject matter does not mean the eligibility mechanisms or transition rules are identical.
 
-The archive is **not a complete history of Canadian immigration law or policy**. Saskatchewan, Manitoba and Quebec public-policy coverage is selective rather than a complete provincial historical reconstruction. Additional federal and provincial historical backfill is added only where dates, source state and transitions can be supported from official sources.
+The archive is **not a complete history of Canadian immigration law or policy**. Saskatchewan, Manitoba, Quebec and Ontario program coverage is selective rather than a complete provincial historical reconstruction. Additional federal and provincial historical backfill is added only where dates, source state and transitions can be supported from official sources.
 
 ## Machine-readable access
 
@@ -121,4 +124,4 @@ Users may cite the archive as a MAK-curated research reference, but the underlyi
 
 Suggested reference:
 
-> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.5.0, 2026-09-13. Individual entries cite the controlling official government source.
+> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.6.0, 2026-09-13. Individual entries cite the controlling official government source.

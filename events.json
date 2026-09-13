@@ -1,11 +1,11 @@
 {
   "archive": {
     "name": "MAK Canadian Immigration Rule Change Archive",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "released": "2026-09-13",
-    "coverage": "Selected material federal IRCC rule and policy changes plus verified Saskatchewan SINP, Manitoba and Quebec public-policy changes, including archived predecessor/successor chains for Quebec PSTQ and Francophone Minority Communities Student Pilot policies.",
+    "coverage": "Selected material federal IRCC rule and policy changes plus verified Ontario OINP, Saskatchewan SINP, Manitoba and Quebec public-policy changes, including preserved predecessor/successor and transition-rule chains.",
     "principle": "Preserve each verified change as a dated event. Never overwrite history when a later rule supersedes it.",
-    "last_verified_at": "2026-09-13T05:20:00+05:00"
+    "last_verified_at": "2026-09-13T04:48:20+05:00"
   },
   "events": [
     {
@@ -499,6 +499,107 @@
       "controlling_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/public-policies/pr-francophone-minority-communities-student-pilot-2026.html",
       "supporting_source_urls": [
         "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/public-policies/study-permit-franco-minority-communities-student-pilot-2026.html"
+      ],
+      "evidence_status": "OFFICIAL_VERIFIED",
+      "last_verified_at": "2026-09-13"
+    },
+    {
+      "id": "ca-visitor-inland-work-permit-policy-ended-2024-08-28",
+      "jurisdiction": "Canada",
+      "authority": "Immigration, Refugees and Citizenship Canada",
+      "topic_key": "visitor-inland-work-permit-public-policy",
+      "topic": "Visitor in-Canada work-permit temporary public policy",
+      "change_type": "temporary_public_policy_ended",
+      "announcement_date": "2024-08-28",
+      "rule_observed_from": "2024-08-28",
+      "effective_from": "2024-08-28",
+      "effective_to": null,
+      "date_basis": "IRCC's August 28, 2024 notice states the temporary public policy ended effective immediately that day.",
+      "status": "historical_termination",
+      "previous_rule": "Since August 2020, qualifying visitors in Canada could use the temporary public policy to apply for a work permit from inside Canada without first leaving. Certain former work-permit holders who had changed to visitor status could also request interim work authorization while a new work-permit application was processed.",
+      "new_rule": "IRCC ended the visitor in-Canada work-permit temporary public policy effective August 28, 2024. New applicants could no longer rely on that policy to bypass the ordinary restrictions on applying for a work permit from inside Canada.",
+      "transition_rule": "IRCC states that applications submitted before August 28, 2024 under the temporary public policy continue to be processed under it.",
+      "supersedes_event_id": null,
+      "superseded_by_event_id": null,
+      "controlling_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/ends-tpp-allowing-visitors-apply-work-permits-within-country.html",
+      "supporting_source_urls": [],
+      "evidence_status": "OFFICIAL_VERIFIED",
+      "last_verified_at": "2026-09-13"
+    },
+    {
+      "id": "on-oinp-redesign-procedure-2026-05-30",
+      "jurisdiction": "Ontario",
+      "authority": "Government of Ontario, Ontario Immigrant Nominee Program",
+      "topic_key": "oinp-redesign-procedure",
+      "topic": "OINP redesign procedural framework",
+      "change_type": "regulatory_procedure_change",
+      "announcement_date": "2026-03-16",
+      "rule_observed_from": "2026-03-16",
+      "effective_from": "2026-05-30",
+      "effective_to": null,
+      "date_basis": "O. Reg. 47/26 was filed March 16, 2026. Section 8(2) makes the specified redesign provisions effective on the later of filing and May 30, 2026; OINP's May 29 update confirms implementation on May 30.",
+      "status": "current_foundational_procedure",
+      "previous_rule": "O. Reg. 421/17 previously contained a fixed list of nomination categories and category-specific expression-of-interest and Express Entry process wording.",
+      "new_rule": "Effective May 30, 2026, O. Reg. 47/26 removed the fixed category provisions and generalized the expression-of-interest and notification-of-interest process for redesigned OINP categories. For job-offer-based pathways, the redesign requires a registered employer and employer-submitted job offer before employment-position approval.",
+      "transition_rule": "OINP states that applications already received under the existing framework are assessed under the eligibility requirements in place at the time of application.",
+      "supersedes_event_id": null,
+      "superseded_by_event_id": null,
+      "controlling_source_url": "https://www.ontario.ca/laws/regulation/r26047",
+      "supporting_source_urls": [
+        "https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates",
+        "https://www.ontario.ca/laws/regulation/170421"
+      ],
+      "evidence_status": "OFFICIAL_VERIFIED",
+      "last_verified_at": "2026-09-13"
+    },
+    {
+      "id": "on-oinp-workforce-priority-regulatory-replacement-2026-06-25",
+      "jurisdiction": "Ontario",
+      "authority": "Government of Ontario, Ontario Immigrant Nominee Program",
+      "topic_key": "oinp-workforce-priority-stream",
+      "topic": "Ontario Workforce Priority stream",
+      "change_type": "streams_replaced",
+      "announcement_date": "2026-06-26",
+      "rule_observed_from": "2026-06-25",
+      "effective_from": "2026-06-25",
+      "effective_to": null,
+      "date_basis": "OINP's June 26 update states the amendments to O. Reg. 422/17 came into force June 25, 2026. O. Reg. 204/26 was made, filed and published on e-Laws on June 25, 2026.",
+      "status": "current_regulatory_foundation",
+      "previous_rule": "Before the redesign, OINP operated eight former streams under the prior framework, including employer job offer, graduate and Ontario Express Entry streams.",
+      "new_rule": "Effective June 25, 2026, O. Reg. 204/26 removed the former eight-stream structure and created the Ontario Workforce Priority stream, with regulatory categories for TEER 0-3, TEER 4-5 and self-employed physicians and detailed applicant, employer, job-offer, work-experience, language and education criteria in O. Reg. 422/17.",
+      "transition_rule": "OINP closed the former EOI system to new registrations and said no further invitations would be issued under the former streams. Uninvited former-stream EOIs and associated job offers were withdrawn during the platform update. Applications already submitted after an invitation under a former stream continue to be assessed under the requirements in force when submitted. Employers using Workforce Priority must submit a new job offer and employment-position approval application through the redesigned process.",
+      "supersedes_event_id": null,
+      "superseded_by_event_id": null,
+      "controlling_source_url": "https://www.ontario.ca/laws/regulation/r26204",
+      "supporting_source_urls": [
+        "https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates",
+        "https://www.ontario.ca/laws/regulation/170422"
+      ],
+      "evidence_status": "OFFICIAL_VERIFIED",
+      "last_verified_at": "2026-09-13"
+    },
+    {
+      "id": "on-oinp-workforce-priority-eoi-launch-2026-08-04",
+      "jurisdiction": "Ontario",
+      "authority": "Government of Ontario, Ontario Immigrant Nominee Program",
+      "topic_key": "oinp-workforce-priority-stream",
+      "topic": "Ontario Workforce Priority stream",
+      "change_type": "eoi_portal_launched",
+      "announcement_date": "2026-08-04",
+      "rule_observed_from": "2026-08-04",
+      "effective_from": "2026-08-04",
+      "effective_to": null,
+      "date_basis": "The official OINP August 4, 2026 program update states that the ministry opened the expression-of-interest portal for the Ontario Workforce Priority stream that day.",
+      "status": "current_operational",
+      "previous_rule": "The Ontario Workforce Priority stream had been created by the June 25 regulatory amendments, but the redesigned expression-of-interest portal was not yet open during the implementation transition.",
+      "new_rule": "On August 4, 2026, OINP opened the expression-of-interest portal for the Ontario Workforce Priority stream, making the redesigned stream operational for eligible TEER 0-3, TEER 4-5 and self-employed physician pathways.",
+      "transition_rule": "Former-stream EOIs that did not result in an invitation were not carried forward as Workforce Priority EOIs. Eligible candidates and employers must use the redesigned stream's current employer/job-offer and EOI workflow.",
+      "supersedes_event_id": null,
+      "superseded_by_event_id": null,
+      "controlling_source_url": "https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates",
+      "supporting_source_urls": [
+        "https://www.ontario.ca/page/ontario-workforce-priority-stream",
+        "https://www.ontario.ca/laws/regulation/170422"
       ],
       "evidence_status": "OFFICIAL_VERIFIED",
       "last_verified_at": "2026-09-13"

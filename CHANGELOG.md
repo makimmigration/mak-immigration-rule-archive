@@ -1,5 +1,27 @@
 # Version history
 
+## v0.6.0 — 2026-09-13
+
+Expanded the public archive with a federal 2024 work-permit policy termination and a three-stage Ontario OINP redesign implementation chain. This release is rebased on the complete public v0.5.0 predecessor/supersession dataset; no v0.5.0 events were dropped.
+
+### Added
+
+- `ca-visitor-inland-work-permit-policy-ended-2024-08-28`: records IRCC's immediate August 28, 2024 termination of the temporary public policy that had allowed qualifying visitors to apply for work permits from inside Canada, while preserving processing for applications submitted before termination.
+- `on-oinp-redesign-procedure-2026-05-30`: records the O. Reg. 47/26 procedural redesign provisions effective May 30, 2026 and Ontario's protection for applications already received under the prior framework.
+- `on-oinp-workforce-priority-regulatory-replacement-2026-06-25`: records the June 25, 2026 O. Reg. 204/26 replacement of the former eight OINP streams with the Ontario Workforce Priority stream, including withdrawal of uninvited former-stream EOIs and preservation of already-submitted invited applications under submission-date rules.
+- `on-oinp-workforce-priority-eoi-launch-2026-08-04`: records the separate August 4, 2026 operational launch of the Workforce Priority expression-of-interest portal rather than back-dating portal availability to the June 25 regulatory change.
+
+### Date and transition controls
+
+- The visitor-policy termination uses August 28, 2024 for announcement, observed-from and effective-from because IRCC expressly states the policy ended effective immediately that day.
+- The OINP May 30 date is supported by O. Reg. 47/26 and OINP's May 29 implementation notice; the March 16 filing/announcement date is retained separately.
+- The OINP June 25 effective date is supported by O. Reg. 204/26 and OINP's June 26 update. Former-stream EOIs that had not produced invitations were withdrawn, while already-submitted invited applications continue under the eligibility rules in force at submission.
+- The August 4 portal launch is preserved as a separate operational milestone, not treated as the legal creation date of the Workforce Priority stream.
+
+### Control/public synchronization
+
+- The v0.6.0 control copy incorporates all v0.5.0 public predecessor/successor records before adding this release, preserving the canonical public history and avoiding regression during concurrent archive maintenance.
+
 ## v0.5.0 — 2026-09-13
 
 Added three archived predecessor public policies and converted three previously descriptive replacement statements into explicit machine-readable supersession chains.
