@@ -1,5 +1,30 @@
 # Version history
 
+## v0.7.0 — 2026-09-13
+
+Expanded the federal implementation history with five high-value 2024–2026 rule changes covering PGWP curriculum-licensing eligibility, international-student off-campus work, DLI changes, Provincial Nominee Class assessment roles and post-secondary student work placements. No v0.6.0 events were removed.
+
+### Added
+
+- `ca-pgwp-curriculum-licensing-ineligibility-2024-05-15`: records IRCC's March 22, 2024 decision to advance the PGWP ineligibility threshold for applicable public-private curriculum-licensing programs from the previously announced September 1 date to May 15, 2024, using the student's program start date as the transition point.
+- `ca-student-off-campus-work-hours-2024-11-08`: records SOR/2024-219's amendment to R186(v)(iii), increasing the regular-session off-campus work maximum from 20 to 24 hours per week effective on registration, November 8, 2024.
+- `ca-study-permit-dli-change-rule-2024-11-08`: records new R217.1 and related amendments requiring an in-Canada study permit holder whose permit names a DLI to apply for a new study permit naming a different DLI, together with the narrow R189.1 interim-study conditions.
+- `ca-pnp-irpr-role-realignment-2026-03-30`: records SOR/2026-63's replacement of R87(2)-(4), assigning provinces and territories sole responsibility for evaluating economic establishment and intent to reside and preserving federal admissibility/program-integrity functions.
+- `ca-postsecondary-coop-work-permit-exemption-2026-04-01`: records IRCC's removal of the separate co-op work-permit requirement for eligible post-secondary student work placements from April 1, 2026, while preserving the permit requirement for secondary-school placements.
+
+### Transition and date controls
+
+- The May 15, 2024 PGWP curriculum-licensing threshold is controlled by IRCC's March 22 notice, which expressly replaced the previously announced September 1 implementation date.
+- SOR/2024-219 was registered November 8, 2024 and expressly came into force on registration. The archive separates its 24-hour work rule from the earlier temporary public policy that had expired April 30, 2024.
+- The DLI-change record preserves the actual R189.1 exception rather than describing all pending change-of-DLI applications as carrying interim study authorization.
+- SOR/2026-63 was registered March 30, 2026. Its Regulatory Impact Analysis Statement expressly applies the new PNP assessment model to both new applications and existing inventory for which an eligibility decision had not yet been rendered.
+- The post-secondary co-op event separates the April 1 effective date from IRCC's April 9 public notice and preserves treatment of existing permits and eligible active pending applications.
+
+### Archive scope
+
+- The public structured release now contains 29 selected material events.
+- This release materially improves federal 2024–2026 study/work and PNP implementation coverage while retaining the archive rule that a missing entry never proves that no rule existed.
+
 ## v0.6.0 — 2026-09-13
 
 Expanded the public archive with a federal 2024 work-permit policy termination and a three-stage Ontario OINP redesign implementation chain. This release is rebased on the complete public v0.5.0 predecessor/supersession dataset; no v0.5.0 events were dropped.
