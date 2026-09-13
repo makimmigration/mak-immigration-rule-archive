@@ -1,0 +1,31 @@
+name: Archive v0.8.0 backfill
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.archive-v080-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply archive v0.8.0 backfill
+        run: python .archive-v080-backfill.py .
+      - name: Validate and publish canonical public archive
+        run: |
+          git config user.name "MAK Archive Automation"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.json events.csv CHANGELOG.md README.md index.html CITATION.cff
+          if git diff --cached --quiet; then
+            echo "Archive already at v0.8.0"
+          else
+            git commit -m "Release v0.8.0 federal transition backfill"
+            git push origin HEAD:main
+          fi
