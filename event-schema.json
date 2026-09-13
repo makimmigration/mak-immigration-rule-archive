@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://makimmigration.github.io/mak-immigration-rule-archive/event-schema.json",
+  "title": "MAK Canadian Immigration Rule Change Archive",
+  "type": "object",
+  "required": ["archive", "events"],
+  "properties": {
+    "archive": {
+      "type": "object",
+      "required": ["name", "version", "released", "coverage", "principle", "last_verified_at"],
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "released": {"type": "string", "format": "date"},
+        "coverage": {"type": "string"},
+        "principle": {"type": "string"},
+        "last_verified_at": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/event"}
+    }
+  },
+  "$defs": {
+    "nullableDate": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "nullableString": {"type": ["string", "null"]},
+    "event": {
+      "type": "object",
+      "required": ["id", "jurisdiction", "authority", "topic_key", "topic", "change_type", "rule_observed_from", "date_basis", "status", "previous_rule", "new_rule", "transition_rule", "controlling_source_url", "supporting_source_urls", "evidence_status", "last_verified_at"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "jurisdiction": {"type": "string", "minLength": 1},
+        "authority": {"type": "string", "minLength": 1},
+        "topic_key": {"type": "string", "minLength": 1},
+        "topic": {"type": "string", "minLength": 1},
+        "change_type": {"type": "string", "minLength": 1},
+        "announcement_date": {"$ref": "#/$defs/nullableDate"},
+        "rule_observed_from": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+        "effective_from": {"$ref": "#/$defs/nullableDate"},
+        "effective_to": {"$ref": "#/$defs/nullableDate"},
+        "date_basis": {"type": "string"},
+        "status": {"type": "string"},
+        "previous_rule": {"type": "string"},
+        "new_rule": {"type": "string"},
+        "transition_rule": {"type": "string"},
+        "supersedes_event_id": {"$ref": "#/$defs/nullableString"},
+        "superseded_by_event_id": {"$ref": "#/$defs/nullableString"},
+        "controlling_source_url": {"type": "string", "format": "uri"},
+        "supporting_source_urls": {"type": "array", "items": {"type": "string", "format": "uri"}},
+        "evidence_status": {"type": "string"},
+        "last_verified_at": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
