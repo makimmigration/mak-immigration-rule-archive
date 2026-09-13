@@ -1,6 +1,6 @@
 # MAK Canadian Immigration Rule Change Archive
 
-Version: 0.7.0  
+Version: 0.8.0  
 Seed release: 2026-09-11  
 Public site: https://makimmigration.github.io/mak-immigration-rule-archive/
 
@@ -79,33 +79,34 @@ A result means the archive contains a verified record for that topic/date. A mis
 
 Current official government sources always control if they conflict with this archive.
 
-## Coverage of v0.7.0
+## Coverage of v0.8.0
 
-The v0.7.0 release contains **29 selected material events**. In addition to the seed federal/Express Entry/PGWP/family-work-permit records and the Saskatchewan/Manitoba entries, the archive now includes:
+The v0.8.0 release contains **36 selected material events**. It preserves all v0.7.0 records and adds a reconstructed 2024–2026 federal implementation chain for study permits, PGWP filing/duration, family open work permits and border filing practice, including:
 
-- the May 15, 2024 PGWP ineligibility threshold for applicable public-private curriculum-licensing programs, including IRCC's advancement of the previously announced September 1 implementation date;
-- SOR/2024-219's November 8, 2024 increase of eligible international-student off-campus work from 20 to 24 hours per week during regular academic sessions;
-- SOR/2024-219's new study-permit filing requirement for post-secondary DLI changes and the narrow R189.1 interim-study exception;
-- SOR/2026-63's March 30, 2026 realignment of Provincial Nominee Class assessment roles, including its express application to existing inventory without an eligibility decision;
+- the January 22, 2024 introduction of the PAL/TAL study-permit filing requirement and its original exemptions/transition rule;
+- the February 15, 2024 three-year PGWP duration rule for eligible master's degree graduates even where the master's program is shorter than two years;
+- the March 19, 2024 restriction of international-student spouse/common-law-partner open work permits, now explicitly linked to the January 21, 2025 successor;
+- the June 21, 2024 end of PGWP applications at ports of entry;
+- the December 23, 2024 broader end of work- and study-permit flagpoling, with CBSA's listed exemptions preserved;
+- the January 22, 2025 expansion of PAL/TAL requirements to master's/doctoral students and most in-Canada applicants, with the later public-DLI graduate exemption treated as a partial supersession rather than an inferred end to the whole 2025 framework;
+- the January 1, 2026 PAL/TAL exemption for degree-granting master's and doctoral programs at public DLIs;
+- the May 15, 2024 PGWP ineligibility threshold for applicable public-private curriculum-licensing programs;
+- SOR/2024-219's November 8, 2024 increase of eligible international-student off-campus work from 20 to 24 hours per week and its post-secondary DLI-change filing rule;
+- SOR/2026-63's March 30, 2026 realignment of Provincial Nominee Class assessment roles;
 - the April 1, 2026 removal of the separate co-op work-permit requirement for eligible post-secondary student work placements;
-- the expired 2023 worker-study public policy;
-- the construction-apprentice study-without-study-permit measure;
-- the March 13, 2026 Quebec PSTQ work-permit predecessor and its June 5, 2026 successor, linked as an explicit supersession chain;
-- the September 18, 2025 FMCSP study-permit predecessor and the June 25, 2026 updated study-permit policy, linked as an explicit supersession chain;
-- the September 18, 2025 FMCSP PR/open-work-permit predecessor and the June 25, 2026 updated PR/open-work-permit policy, linked as an explicit supersession chain;
+- the expired 2023 worker-study public policy and the distinct September 2026 short-study policy;
+- the Quebec PSTQ and FMCSP predecessor/successor public-policy chains;
 - IRCC's August 28, 2024 termination of the visitor in-Canada work-permit temporary public policy; and
-- the Ontario OINP redesign implementation milestones of May 30, June 25 and August 4, 2026, including former-stream EOI/application transition rules.
+- the Ontario OINP redesign implementation milestones of May 30, June 25 and August 4, 2026.
 
 The archived 2025 FMCSP PR policy displays the impossible calendar date `November 31, 2031` as its nominal expiry. The archive does **not** silently convert that to another date. Instead, the record notes the source anomaly and bounds the historical active state by the verified June 25, 2026 successor that expressly revoked and replaced it.
-
-The archive deliberately keeps the expired 2023 worker-study measure separate from the different September 2026 short-study policy. Similar subject matter does not mean the eligibility mechanisms or transition rules are identical.
 
 The archive is **not a complete history of Canadian immigration law or policy**. Federal coverage is implementation-first but still selective, and Saskatchewan, Manitoba, Quebec and Ontario program coverage remains selective rather than a complete provincial historical reconstruction. Additional federal and provincial historical backfill is added only where dates, source state and transitions can be supported from official sources.
 
 ## Machine-readable access
 
 - `events.json` is the canonical public structured release.
-- `events.csv` is a flat export for analysts, journalists and spreadsheet users.
+- `events.csv` is a flat export for analysts, journalists and spreadsheet users; it includes `supporting_source_urls` as a JSON-array cell so secondary official-source chains remain machine-readable.
 - `CHANGELOG.md` records archive-version changes.
 
 ## Change acceptance gate
@@ -127,4 +128,4 @@ Users may cite the archive as a MAK-curated research reference, but the underlyi
 
 Suggested reference:
 
-> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.7.0, 2026-09-13. Individual entries cite the controlling official government source.
+> MAK Canadian Immigration Services, Immigration Data Observatory. *Canadian Immigration Rule Change Archive*, version 0.8.0, 2026-09-13. Individual entries cite the controlling official government source.

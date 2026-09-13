@@ -1,5 +1,30 @@
 # Version history
 
+## v0.8.0 — 2026-09-13
+
+Expanded the implementation-first federal history from 29 to 36 events. No v0.7.0 event was removed. This release reconstructs several high-value 2024–2026 transition chains from official IRCC, CBSA and Ministerial Instruction evidence and improves the flat CSV export.
+
+### Added
+
+- `ca-study-permit-pal-tal-introduction-2024-01-22`: reconstructs the January 22, 2024 introduction of the PAL/TAL study-permit filing requirement, including the 8:30 a.m. ET intake boundary and original exemption cohorts.
+- `ca-pgwp-masters-three-year-duration-2024-02-15`: records the February 15, 2024 special three-year PGWP duration rule for eligible master's degree graduates whose programs are shorter than two years.
+- `ca-family-owp-students-2024-03-19`: reconstructs the March 19, 2024 restriction of international-student spouse/common-law-partner open work permit eligibility and links it to the January 21, 2025 successor.
+- `ca-pgwp-port-of-entry-application-ended-2024-06-21`: records the immediate June 21, 2024 end of PGWP applications at ports of entry.
+- `ca-work-study-permit-flagpoling-ended-2024-12-23`: records the broader December 23, 2024 at 11:59 p.m. ET end of work- and study-permit flagpoling and preserves CBSA's listed exceptions.
+- `ca-study-permit-pal-tal-graduate-expansion-2025-01-22`: records the 2025 expansion of PAL/TAL requirements to master's/doctoral students and most in-Canada applicants.
+- `ca-study-permit-pal-tal-public-graduate-exemption-2026-01-01`: records the January 1, 2026 PAL/TAL exemption for degree-granting master's and doctoral programs at public DLIs.
+
+### Supersession and transition reconstruction
+
+- Updated `ca-family-owp-students-2025-01-21` so its predecessor is no longer described generically: it now links back to the reconstructed March 19, 2024 rule state and explains the additional January 21, 2025 narrowing.
+- The January 22, 2025 PAL/TAL expansion has no record-level `effective_to` date because the January 1, 2026 change only superseded the public-DLI master's/doctoral component. The broader 2025 framework is therefore marked as partially superseded rather than silently ended.
+- Historical filing-channel changes are kept distinct: PGWP port-of-entry filing ended June 21, 2024; the wider work/study flagpoling restriction followed December 23, 2024.
+
+### Machine-readable release
+
+- `events.csv` now exports `supporting_source_urls` in addition to each event's controlling source, keeping the CSV source chain aligned with `events.json`.
+- Archive metadata, README coverage, interface version and CITATION metadata were advanced together to v0.8.0.
+
 ## v0.7.0 — 2026-09-13
 
 Expanded the federal implementation history with five high-value 2024–2026 rule changes covering PGWP curriculum-licensing eligibility, international-student off-campus work, DLI changes, Provincial Nominee Class assessment roles and post-secondary student work placements. No v0.6.0 events were removed.
