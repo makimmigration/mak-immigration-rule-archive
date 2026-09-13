@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data Dictionary | Canadian Immigration Rule Change Archive</title><meta name="description" content="Field definitions for the MAK Canadian Immigration Rule Change Archive structured dataset."><style>:root{--ink:#14263d;--muted:#66788b;--line:#dce5eb;--paper:#f7fafb;--brand:#0a626b}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);line-height:1.55}header{padding:48px 22px 32px;background:#f2f8f8;border-bottom:1px solid var(--line)}main{max-width:1080px;margin:auto;padding:30px 22px 70px}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:.2em 0}.eyebrow{font-weight:800;letter-spacing:.07em;text-transform:uppercase;font-size:.78rem;color:var(--brand)}.lead,.small{color:var(--muted)}table{width:100%;border-collapse:collapse;margin:20px 0}th,td{text-align:left;vertical-align:top;padding:11px;border-bottom:1px solid var(--line)}th{background:var(--paper)}code{background:#eef4f5;padding:2px 5px;border-radius:4px}a{color:var(--brand);font-weight:700}@media(max-width:720px){table{font-size:.9rem}}</style></head><body><header><div style="max-width:1080px;margin:auto"><div class="eyebrow">MAK Immigration Data Observatory · v0.8.0</div><h1>Event data dictionary</h1><p class="lead">Field-level meaning for the canonical <code>events.json</code> release and the flat CSV export.</p></div></header><main><p><a href="index.html">← Archive home</a> · <a href="researcher-kit.html">Researcher kit</a> · <a href="event-schema.json">JSON schema</a></p><table><thead><tr><th>Field</th><th>Meaning</th></tr></thead><tbody>
+<tr><td><code>id</code></td><td>Stable archive event identifier.</td></tr>
+<tr><td><code>jurisdiction</code></td><td>Jurisdiction to which the event applies, such as Canada or a named province.</td></tr>
+<tr><td><code>authority</code></td><td>Official public authority responsible for the controlling source.</td></tr>
+<tr><td><code>topic_key</code></td><td>Stable machine-oriented topic key used to group related historical events.</td></tr>
+<tr><td><code>topic</code></td><td>Human-readable topic title.</td></tr>
+<tr><td><code>change_type</code></td><td>Compact classification of the kind of rule or policy change recorded.</td></tr>
+<tr><td><code>announcement_date</code></td><td>Date an official announcement or notice was published, if known. This is not automatically the effective date.</td></tr>
+<tr><td><code>rule_observed_from</code></td><td>Earliest date on which the archive verified the stated rule from the cited official evidence.</td></tr>
+<tr><td><code>effective_from</code></td><td>Legal or program effective date only where an official source explicitly supports it or the controlling instrument establishes it. May be null.</td></tr>
+<tr><td><code>effective_to</code></td><td>Supported end date for that rule state. Null where no defensible record-level end date is established.</td></tr>
+<tr><td><code>date_basis</code></td><td>Explanation of why the archive uses the recorded date treatment.</td></tr>
+<tr><td><code>status</code></td><td>Archive status label describing whether the event is current, temporary, superseded or otherwise bounded.</td></tr>
+<tr><td><code>previous_rule</code></td><td>Historical predecessor context or an explicit statement that earlier coverage is incomplete.</td></tr>
+<tr><td><code>new_rule</code></td><td>MAK-authored summary of the rule or policy state supported by the controlling source.</td></tr>
+<tr><td><code>transition_rule</code></td><td>Transition, grandfathering, exception or historical-bounding information relevant to the change.</td></tr>
+<tr><td><code>supersedes_event_id</code></td><td>Older archive event replaced by this event where the relationship is fully supported.</td></tr>
+<tr><td><code>superseded_by_event_id</code></td><td>Newer archive event that replaced this event where the relationship is fully supported.</td></tr>
+<tr><td><code>controlling_source_url</code></td><td>Official source used as the controlling evidence for the archived proposition.</td></tr>
+<tr><td><code>supporting_source_urls</code></td><td>Additional official sources that support the same event or its transition chain.</td></tr>
+<tr><td><code>evidence_status</code></td><td>Evidence-control label. Current v0.8.0 release uses official-source verification for published events.</td></tr>
+<tr><td><code>last_verified_at</code></td><td>Date the event's official-source evidence was last verified for the release.</td></tr>
+</tbody></table><p class="small"><strong>Interpretation:</strong> a missing event does not prove that no rule existed. It means this release does not contain enough verified historical evidence to answer that topic/date safely. See <a href="methodology.html">methodology</a>.</p></main></body></html>
