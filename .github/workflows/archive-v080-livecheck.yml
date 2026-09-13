@@ -1,0 +1,57 @@
+name: Archive v0.8.0 live verification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.archive-v080-livecheck-trigger'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify GitHub Pages site and machine-readable endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://makimmigration.github.io/mak-immigration-rule-archive"
+          OK=0
+          for i in $(seq 1 12); do
+            if curl -fsSL "$BASE/?check=$GITHUB_SHA-$i" -o /tmp/site.html \
+              && curl -fsSL "$BASE/events.json?check=$GITHUB_SHA-$i" -o /tmp/events.json \
+              && curl -fsSL "$BASE/events.csv?check=$GITHUB_SHA-$i" -o /tmp/events.csv \
+              && python - <<'PY'
+          import csv, json
+          need = {
+              'ca-study-permit-pal-tal-introduction-2024-01-22',
+              'ca-pgwp-masters-three-year-duration-2024-02-15',
+              'ca-family-owp-students-2024-03-19',
+              'ca-pgwp-port-of-entry-application-ended-2024-06-21',
+              'ca-work-study-permit-flagpoling-ended-2024-12-23',
+              'ca-study-permit-pal-tal-graduate-expansion-2025-01-22',
+              'ca-study-permit-pal-tal-public-graduate-exemption-2026-01-01',
+          }
+          with open('/tmp/events.json', encoding='utf-8') as f:
+              j = json.load(f)
+          assert j['archive']['version'] == '0.8.0'
+          assert len(j['events']) == 36
+          assert need <= {e['id'] for e in j['events']}
+          with open('/tmp/events.csv', newline='', encoding='utf-8') as f:
+              rows = list(csv.DictReader(f))
+          assert len(rows) == 36
+          assert 'supporting_source_urls' in rows[0]
+          assert need <= {r['id'] for r in rows}
+          site = open('/tmp/site.html', encoding='utf-8').read()
+          assert '0.8.0' in site
+          PY
+            then
+              echo "Live archive verified: v0.8.0, 36 JSON events, 36 CSV records, seven v0.8.0 event IDs present."
+              OK=1
+              break
+            fi
+            sleep 10
+          done
+          test "$OK" = 1
