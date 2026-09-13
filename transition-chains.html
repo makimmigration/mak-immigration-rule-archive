@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Canadian Immigration Policy Transition Chains | MAK Immigration Data Observatory</title>
+<meta name="description" content="A public index of explicit predecessor and successor relationships in the MAK Canadian Immigration Rule Change Archive, tied to controlling official government sources.">
+<meta name="robots" content="index,follow">
+<style>
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#14263d;line-height:1.5}header{padding:44px 22px;background:#f2f8f8;border-bottom:1px solid #dce5eb}.wrap{max-width:1120px;margin:auto}main{max-width:1120px;margin:auto;padding:28px 22px 60px}h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05;margin:.2em 0}.lead{max-width:850px;color:#66788b}.notice{border-left:4px solid #0a626b;background:#f7fafb;padding:14px 16px;margin:20px 0}.tablewrap{overflow:auto;border:1px solid #dce5eb;border-radius:12px}table{width:100%;border-collapse:collapse;min-width:900px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #e6edf1}th{background:#f7fafb;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}a{color:#0a626b;font-weight:700}.pill{display:inline-block;padding:3px 7px;border-radius:999px;background:#eef5f5;color:#0a626b;font-size:.72rem;font-weight:800}.small{font-size:.86rem;color:#66788b}footer{border-top:1px solid #dce5eb;background:#f7fafb;padding:22px;color:#66788b}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="small">MAK Immigration Data Observatory</div><h1>Canadian Immigration Policy Transition Chains</h1><p class="lead">A citation-oriented index of explicit predecessor → successor relationships already verified in the MAK Canadian Immigration Rule Change Archive.</p></div></header>
+<main>
+<div class="notice"><strong>Scope rule:</strong> this page only displays explicit machine-readable supersession relationships recorded in <code>events.json</code>. It does not infer a transition merely because two rules concern the same topic. Current official government sources control.</div>
+<p><a href="index.html">Search the full archive</a> · <a href="events.json">Canonical JSON</a> · <a href="official-source-index.html">Official source index</a></p>
+<div id="summary" class="small">Loading verified transition chains…</div>
+<div class="tablewrap"><table><thead><tr><th>Topic</th><th>Earlier rule state</th><th>Successor rule state</th><th>Transition</th><th>Official sources</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<footer><div class="wrap">MAK Canadian Immigration Services · Immigration Data Observatory · This index is generated from the archive's explicit supersession fields and is a research aid, not legal advice.</div></footer>
+<script>
+const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch('events.json').then(r=>r.json()).then(a=>{
+ const byId=new Map(a.events.map(e=>[e.id,e]));
+ const pairs=[];
+ a.events.forEach(later=>{if(later.supersedes_event_id&&byId.has(later.supersedes_event_id)){pairs.push([byId.get(later.supersedes_event_id),later]);}});
+ pairs.sort((x,y)=>(x[1].effective_from||x[1].rule_observed_from).localeCompare(y[1].effective_from||y[1].rule_observed_from));
+ document.getElementById('summary').textContent=`${pairs.length} explicit predecessor → successor relationships in archive v${a.archive.version}.`;
+ document.getElementById('rows').innerHTML=pairs.map(([p,s])=>`<tr><td><strong>${esc(s.topic)}</strong><br><span class="small"><code>${esc(s.topic_key)}</code></span></td><td><span class="pill">${esc(p.status)}</span><br><strong>${esc(p.effective_from||p.rule_observed_from)}</strong><br>${esc(p.new_rule)}</td><td><span class="pill">${esc(s.status)}</span><br><strong>${esc(s.effective_from||s.rule_observed_from)}</strong><br>${esc(s.new_rule)}</td><td>${esc(s.transition_rule)}</td><td><a target="_blank" rel="noopener" href="${esc(p.controlling_source_url)}">Earlier official source</a><br><a target="_blank" rel="noopener" href="${esc(s.controlling_source_url)}">Successor official source</a></td></tr>`).join('');
+}).catch(()=>{document.getElementById('summary').textContent='Archive data could not be loaded.'});
+</script>
+</body></html>
