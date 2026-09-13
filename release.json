@@ -1,0 +1,37 @@
+{
+  "name": "MAK Canadian Immigration Rule Change Archive",
+  "version": "0.8.0",
+  "released": "2026-09-13",
+  "event_count": 36,
+  "canonical_url": "https://makimmigration.github.io/mak-immigration-rule-archive/",
+  "repository": "https://github.com/makimmigration/mak-immigration-rule-archive",
+  "canonical_data": {
+    "json": "https://makimmigration.github.io/mak-immigration-rule-archive/events.json",
+    "csv": "https://makimmigration.github.io/mak-immigration-rule-archive/events.csv"
+  },
+  "derived_views": {
+    "citation_table": "https://makimmigration.github.io/mak-immigration-rule-archive/citation-table.html",
+    "topic_chronology": "https://makimmigration.github.io/mak-immigration-rule-archive/topic-chronology.html",
+    "effective_date_index": "https://makimmigration.github.io/mak-immigration-rule-archive/effective-date-index.html",
+    "current_vs_superseded": "https://makimmigration.github.io/mak-immigration-rule-archive/current-vs-superseded.html",
+    "current_vs_superseded_csv": "https://makimmigration.github.io/mak-immigration-rule-archive/current-vs-superseded.csv",
+    "transition_chains": "https://makimmigration.github.io/mak-immigration-rule-archive/transition-chains.html",
+    "transition_chains_csv": "https://makimmigration.github.io/mak-immigration-rule-archive/transition-chains.csv",
+    "official_source_index": "https://makimmigration.github.io/mak-immigration-rule-archive/official-source-index.html"
+  },
+  "research_controls": {
+    "researcher_kit": "https://makimmigration.github.io/mak-immigration-rule-archive/researcher-kit.html",
+    "methodology": "https://makimmigration.github.io/mak-immigration-rule-archive/methodology.html",
+    "data_dictionary": "https://makimmigration.github.io/mak-immigration-rule-archive/data-dictionary.html",
+    "event_schema": "https://makimmigration.github.io/mak-immigration-rule-archive/event-schema.json",
+    "citation_guide": "https://makimmigration.github.io/mak-immigration-rule-archive/cite-reuse.html",
+    "citation_cff": "https://makimmigration.github.io/mak-immigration-rule-archive/CITATION.cff",
+    "license": "https://makimmigration.github.io/mak-immigration-rule-archive/LICENSE.md",
+    "changelog": "https://makimmigration.github.io/mak-immigration-rule-archive/CHANGELOG.md"
+  },
+  "license": "CC-BY-4.0 for MAK-authored archive contributions to the extent MAK owns copyright; government source material remains subject to the relevant government terms.",
+  "coverage_note": "Selected material events only. Missing coverage does not mean no rule existed.",
+  "source_rule": "Only official government sources can be controlling evidence for published archive events.",
+  "date_rule": "Announcement date, observed-from date and effective date are kept separate; effective dates are not inferred from publication dates.",
+  "conflict_rule": "Current official government sources control if they conflict with this archive."
+}
