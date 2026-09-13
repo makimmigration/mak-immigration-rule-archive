@@ -13,10 +13,10 @@
 <body>
 <header><div class="wrap"><div class="eyebrow">MAK Immigration Data Observatory · Derived Citation View</div><h1>Current vs superseded rule states</h1><p class="lead">A topic-level comparison of selected archived rule states. It keeps historical rules visible so researchers can see what changed instead of silently replacing older guidance.</p></div></header>
 <main>
-<div class="notice"><strong>Research/reference tool, not legal advice.</strong> This page adds no new legal proposition. It classifies rows only from the status, dates and supersession fields already stored in <a href="events.json">events.json</a>. Official government sources control.</div>
+<div class="notice"><strong>Research/reference tool, not legal advice.</strong> This page adds no new legal proposition. It classifies rows only from the status, dates and supersession fields already stored in <a href="events.json">events.json</a>. Official government sources control. A compact <a href="current-vs-superseded.csv">machine-readable CSV</a> is also available.</div>
 <label for="q"><strong>Search topic or rule text</strong></label><input id="q" class="field" placeholder="e.g. PGWP, family open work permits, Quebec">
 <p id="summary" class="muted"></p><div id="results"></div>
-<div class="nav"><a href="index.html">Archive home</a><a href="topic-chronology.html">Topic chronology</a><a href="effective-date-index.html">Effective-date index</a><a href="transition-chains.html">Transition chains</a><a href="official-source-index.html">Official source index</a></div>
+<div class="nav"><a href="index.html">Archive home</a><a href="current-vs-superseded.csv">Current/superseded CSV</a><a href="topic-chronology.html">Topic chronology</a><a href="effective-date-index.html">Effective-date index</a><a href="transition-chains.html">Transition chains</a><a href="official-source-index.html">Official source index</a></div>
 </main>
 <script>
 const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));let data=[];
