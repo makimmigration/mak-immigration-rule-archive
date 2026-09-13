@@ -103,11 +103,17 @@ The archived 2025 FMCSP PR policy displays the impossible calendar date `Novembe
 
 The archive is **not a complete history of Canadian immigration law or policy**. Federal coverage is implementation-first but still selective, and Saskatchewan, Manitoba, Quebec and Ontario program coverage remains selective rather than a complete provincial historical reconstruction. Additional federal and provincial historical backfill is added only where dates, source state and transitions can be supported from official sources.
 
-## Machine-readable access
+## Machine-readable and research access
 
 - `events.json` is the canonical public structured release.
 - `events.csv` is a flat export for analysts, journalists and spreadsheet users; it includes `supporting_source_urls` as a JSON-array cell so secondary official-source chains remain machine-readable.
+- `research-briefs.html` provides 12 topic-focused citation entry points derived from the canonical events, including PGWP, family work permits, PAL/TAL, flagpoling/filing channels, Ontario PNP redesign, Quebec PSTQ measures, the Francophone Minority Communities Student Pilot, study-without-study-permit measures, international-student work rules, broader international-student changes, PNP 2026 and Express Entry.
+- `research-briefs.csv` maps every brief to its included event IDs and stable event permalinks.
+- `researcher-kit.html` provides one-page access to canonical data, research briefs, citation views, methodology and reuse controls.
+- `release.json` exposes a machine-readable map of the public release and derived views.
 - `CHANGELOG.md` records archive-version changes.
+
+Research briefs are derived views only. They add no new legal proposition and never replace the current controlling government source.
 
 ## Change acceptance gate
 
