@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Canadian Immigration Rule Effective-Date Index | MAK Immigration Data Observatory</title>
+<meta name="description" content="A date-first index of selected verified Canadian immigration rule and policy changes, with official sources and explicit treatment when no separate effective date is stated.">
+<meta name="robots" content="index,follow">
+<style>
+:root{--ink:#14263d;--muted:#66788b;--line:#dce5eb;--paper:#f7fafb;--brand:#0a626b;--warn:#865500}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);line-height:1.5}header{padding:48px 22px 34px;background:linear-gradient(180deg,#f2f8f8,#fff);border-bottom:1px solid var(--line)}.wrap,main{max-width:1180px;margin:auto}main{padding:26px 22px 70px}.eyebrow{font-weight:800;letter-spacing:.07em;text-transform:uppercase;font-size:.78rem;color:var(--brand)}h1{font-size:clamp(2rem,4vw,3.6rem);line-height:1.05;margin:.25em 0}.lead,.muted{color:var(--muted)}.notice{border-left:4px solid var(--brand);background:var(--paper);padding:14px 16px;margin-bottom:20px}.filters{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:12px;margin:18px 0}.field{width:100%;padding:10px 11px;border:1px solid #bfcbd3;border-radius:8px;font:inherit;background:white}.table{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:920px}th,td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--paper);position:sticky;top:0}tr:last-child td{border-bottom:0}.date{font-weight:850;white-space:nowrap}.tag{font-size:.72rem;font-weight:800;padding:3px 7px;border-radius:999px;background:#eef5f5;color:var(--brand);display:inline-block}.warn{color:var(--warn);font-weight:750}a{color:var(--brand);font-weight:700}.nav{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}.nav a{margin-right:14px}.small{font-size:.84rem}@media(max-width:760px){.filters{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">MAK Immigration Data Observatory · Derived Citation View</div><h1>Effective-date index</h1><p class="lead">A date-first reference table for selected material Canadian immigration rule and policy changes. Where the official source does not state a separate legal effective date, the index shows that explicitly.</p></div></header>
+<main>
+<div class="notice"><strong>Research/reference tool, not legal advice.</strong> This page is generated from the archive’s verified event records and does not infer an effective date from an announcement date.</div>
+<div class="filters"><div><label for="q"><strong>Search</strong></label><input id="q" class="field" placeholder="topic, change type, authority"></div><div><label for="from"><strong>From</strong></label><input id="from" class="field" type="date"></div><div><label for="to"><strong>To</strong></label><input id="to" class="field" type="date"></div></div>
+<p id="summary" class="muted"></p><div class="table"><table><thead><tr><th>Effective / observed date</th><th>Topic</th><th>Change</th><th>Status</th><th>Date basis</th><th>Official source</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="nav"><a href="index.html">Archive home</a><a href="topic-chronology.html">Topic chronology</a><a href="transition-chains.html">Transition chains</a><a href="official-source-index.html">Official source index</a><a href="events.json">JSON</a><a href="events.csv">CSV</a></div>
+</main>
+<script>
+const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));let data=[];
+function sortDate(e){return e.effective_from||e.rule_observed_from||e.announcement_date||''}
+function render(){const q=document.getElementById('q').value.trim().toLowerCase(),from=document.getElementById('from').value,to=document.getElementById('to').value;let rows=data.filter(e=>{const d=sortDate(e);if(from&&d&&d<from)return false;if(to&&d&&d>to)return false;return !q||[e.topic,e.topic_key,e.change_type,e.authority,e.jurisdiction,e.status,e.date_basis].join(' ').toLowerCase().includes(q)}).sort((a,b)=>sortDate(b).localeCompare(sortDate(a)));document.getElementById('summary').textContent=`${rows.length} archived event${rows.length===1?'':'s'}.`;document.getElementById('rows').innerHTML=rows.map(e=>{const explicit=!!e.effective_from,d=explicit?e.effective_from:(e.rule_observed_from||e.announcement_date||'');return `<tr><td><div class="date">${esc(d||'Date not stated')}</div><div class="small ${explicit?'muted':'warn'}">${explicit?'explicit effective date':'no separate effective date recorded'}</div></td><td>${esc(e.topic)}<div class="small muted"><code>${esc(e.id)}</code></div></td><td><span class="tag">${esc(e.change_type)}</span><div class="small" style="margin-top:6px">${esc(e.new_rule)}</div></td><td>${esc(e.status)}</td><td class="small">${esc(e.date_basis)}</td><td><a target="_blank" rel="noopener" href="${esc(e.controlling_source_url)}">Official source</a></td></tr>`}).join('')}
+fetch('events.json').then(r=>r.json()).then(j=>{data=j.events||[];render()}).catch(()=>document.getElementById('rows').innerHTML='<tr><td colspan="6">Archive data could not be loaded.</td></tr>');['q','from','to'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));
+</script>
+</body></html>
