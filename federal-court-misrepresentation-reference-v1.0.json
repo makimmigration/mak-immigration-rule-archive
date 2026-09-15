@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "federal-court-misrepresentation-reference-v1.0",
+  "title": "Canadian Immigration Misrepresentation: Procedural Fairness, Disclosure and Materiality — A Federal Court Reference Table",
+  "version": "1.0",
+  "published": "2026-09-15",
+  "research_cutoff": "2026-09-15",
+  "maintainer": "MAK Canadian Immigration Services",
+  "human_legal_qa": {
+    "status": "APPROVED",
+    "reviewer": "RCIC Usman Khalil"
+  },
+  "canonical_url": "https://github.com/makimmigration/mak-immigration-rule-archive/blob/main/federal-court-misrepresentation-reference-v1.0.md",
+  "source_asset_sha": "ce00920baf28e35be842a8d3caf4e8e9c0620c06",
+  "purpose": "Machine-readable companion metadata for the reviewed Federal Court reference on immigration misrepresentation, procedural fairness, disclosure and materiality.",
+  "use_limits": [
+    "Research reference only; not legal advice.",
+    "Not a prediction tool or win-rate study.",
+    "Not an exhaustive catalogue of Federal Court misrepresentation decisions.",
+    "Case propositions remain context-specific and should be checked against current controlling legislation, regulations, official guidance and current treatment before use in a live matter."
+  ],
+  "statutory_and_policy_anchors": [
+    {
+      "authority": "IRPA A40(1)(a)",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html"
+    },
+    {
+      "authority": "IRPA A16(1)",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-16.html"
+    },
+    {
+      "authority": "IRPR R200",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html"
+    },
+    {
+      "authority": "IRPR R203",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-203.html"
+    },
+    {
+      "authority": "IRCC procedural fairness guidance",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/service-delivery/procedural-fairness.html"
+    }
+  ],
+  "cases": [
+    {
+      "citation": "Vasilev v Canada (Citizenship and Immigration), 2026 FC 716",
+      "context": "TRV / misrepresentation / procedural fairness",
+      "pinpoints": "paras 17-24",
+      "comparison_control": "Read alongside Ekpe 2026 FC 727; fairness remains contextual."
+    },
+    {
+      "citation": "Ekpe v Canada (Citizenship and Immigration), 2026 FC 727",
+      "context": "Work permit / misrepresentation / procedural fairness",
+      "pinpoints": "paras 4-6",
+      "comparison_control": "Direct comparator to Vasilev; not later treatment of it."
+    },
+    {
+      "citation": "Agyemang v Canada (Citizenship and Immigration), 2026 FC 30",
+      "context": "Study permit / misrepresentation / disclosure of concerns and extrinsic evidence",
+      "pinpoints": "paras 47, 60, 62-63, 81-85, 92-93",
+      "comparison_control": "Read together with Vasilev; do not state a universal full-disclosure rule."
+    },
+    {
+      "citation": "Odobo v Canada (Citizenship and Immigration), 2026 FC 49",
+      "context": "LMIA-based work permit / misrepresentation / adequacy of PFL",
+      "pinpoints": "paras 10-17",
+      "comparison_control": "Read together with Vasilev; proposition is limited to procedural fairness."
+    },
+    {
+      "citation": "Ju v Canada (Citizenship and Immigration), 2026 FC 236",
+      "context": "Saskatchewan nominee PR/work permit / employer documents / misrepresentation",
+      "pinpoints": "paras 10, 15-24, 30-34",
+      "comparison_control": "The Court did not decide the applicant's reasonableness arguments."
+    },
+    {
+      "citation": "Chater v Canada (Citizenship and Immigration), 2026 FC 588",
+      "context": "TRV / A40(1)(a) materiality",
+      "pinpoints": "paras 5-10",
+      "comparison_control": "Read with Righetti 2026 FC 830 on omitted-refusal materiality."
+    },
+    {
+      "citation": "Righetti v Canada (Citizenship and Immigration), 2026 FC 830",
+      "context": "eTA / omitted prior work-permit refusals / fairness and materiality",
+      "pinpoints": "paras 35-38, 50-54",
+      "comparison_control": "Comparator to Chater; does not hold that materiality may be presumed."
+    }
+  ],
+  "suggested_citation": "MAK Canadian Immigration Services. Canadian Immigration Misrepresentation: Procedural Fairness, Disclosure and Materiality — A Federal Court Reference Table. Version 1.0, 2026-09-15. Reviewed by RCIC Usman Khalil."
+}
