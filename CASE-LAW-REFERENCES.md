@@ -13,7 +13,8 @@ Public access:
 - `federal-court-misrepresentation-reference-v1.0.html` — human-readable public access layer
 - `federal-court-misrepresentation-reference-v1.0.md` — canonical reviewed text
 
-Citation/use companions:
+Dataset and citation/use companions:
+- `federal-court-misrepresentation-reference-v1.0.csv` — tabular public dataset of the seven Human-Legal-QA-approved Federal Court reference rows
 - `federal-court-misrepresentation-reference-v1.0.json` — machine-readable citation, source and case metadata
 - `federal-court-misrepresentation-reference-v1.0.bib` — BibTeX citation record
 
