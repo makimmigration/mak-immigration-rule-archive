@@ -9,8 +9,9 @@ This repository also contains a small set of separately reviewed case-law resear
 **Research cutoff:** 2026-09-15  
 **Human Legal QA:** APPROVED — RCIC Usman Khalil
 
-Public reference:
-- `federal-court-misrepresentation-reference-v1.0.md`
+Public access:
+- `federal-court-misrepresentation-reference-v1.0.html` — human-readable public access layer
+- `federal-court-misrepresentation-reference-v1.0.md` — canonical reviewed text
 
 Citation/use companions:
 - `federal-court-misrepresentation-reference-v1.0.json` — machine-readable citation, source and case metadata
