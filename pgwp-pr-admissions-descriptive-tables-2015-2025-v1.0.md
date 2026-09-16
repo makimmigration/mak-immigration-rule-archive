@@ -108,6 +108,8 @@ Long-form CSV: [`pgwp-pr-admissions-descriptive-tables-2015-2025-v1.0.csv`](pgwp
 
 Human-readable web view: [`pgwp-pr-admissions-descriptive-tables-2015-2025-v1.0.html`](pgwp-pr-admissions-descriptive-tables-2015-2025-v1.0.html)
 
+Citation-manager exports: [`BibTeX`](pgwp-pr-admissions-descriptive-tables-2015-2025-v1.0.bib) · [`RIS`](pgwp-pr-admissions-descriptive-tables-2015-2025-v1.0.ris)
+
 The CSV keeps source-table type, period, geography, metric, value, suppression status and interpretation note separate so downstream users do not have to infer whether a number is an exact source total or a published-visible minimum.
 
 ## Suggested citation
