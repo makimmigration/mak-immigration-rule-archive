@@ -47,6 +47,8 @@ Machine-readable CSV: [`suv-refusal-ground-instances-2019-2023-v1.0.csv`](suv-re
 
 Human-readable web view: [`suv-refusal-ground-instances-2019-2023-v1.0.html`](suv-refusal-ground-instances-2019-2023-v1.0.html)
 
+Citation exports: [BibTeX](suv-refusal-ground-instances-2019-2023-v1.0.bib) · [RIS](suv-refusal-ground-instances-2019-2023-v1.0.ris)
+
 ## Controlled legal and historical cross-reference
 
 The ATI label is the primary field. Legal descriptions below are secondary cross-references and must never replace the source label in the underlying data.
@@ -101,7 +103,9 @@ Do not state or imply that:
 
 ## Suggested citation
 
-MAK Canadian Immigration Services, Immigration Data Observatory. *IRCC Start-Up Visa Refusal-Ground Instances, January 2019–March 2023*. Version 1.0, September 16, 2026. Derived from IRCC completed ATI request A-2025-56513.
+MAK Canadian Immigration Services, Immigration Data Observatory. *IRCC Start-Up Visa Refusal-Ground Instances, January 2019–March 2023*. Version 1.0, September 16, 2026. Derived from IRCC completed ATI request A-2025-56513. Available at: https://makimmigration.github.io/mak-immigration-rule-archive/suv-refusal-ground-instances-2019-2023-v1.0.html
+
+BibTeX and RIS citation-manager exports are provided alongside this reference and preserve the same bounded title, version, date, request number and interpretation note.
 
 ## Reuse boundary
 
