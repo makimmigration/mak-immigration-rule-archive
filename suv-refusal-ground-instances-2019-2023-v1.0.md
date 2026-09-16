@@ -49,6 +49,8 @@ Human-readable web view: [`suv-refusal-ground-instances-2019-2023-v1.0.html`](su
 
 Citation exports: [BibTeX](suv-refusal-ground-instances-2019-2023-v1.0.bib) · [RIS](suv-refusal-ground-instances-2019-2023-v1.0.ris)
 
+Reproducibility companion: [Methods & provenance](suv-refusal-ground-instances-2019-2023-v1.0-methods.html) — source chain, transformation protocol, field definitions, arithmetic validation invariants, snapshot identifiers and version discipline.
+
 ## Controlled legal and historical cross-reference
 
 The ATI label is the primary field. Legal descriptions below are secondary cross-references and must never replace the source label in the underlying data.
