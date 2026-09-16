@@ -17,6 +17,7 @@ Dataset and citation/use companions:
 - `federal-court-misrepresentation-reference-v1.0.csv` — tabular public dataset of the seven Human-Legal-QA-approved Federal Court reference rows
 - `federal-court-misrepresentation-reference-v1.0.json` — machine-readable citation, source and case metadata
 - `federal-court-misrepresentation-reference-v1.0.bib` — BibTeX citation record
+- `federal-court-misrepresentation-reference-v1.0.ris` — RIS citation record for reference-manager import
 
 The reference contains seven Federal Court decisions selected to preserve materially different reasoning and outcomes on procedural fairness, disclosure and A40(1)(a) materiality. It includes paragraph pinpoints, comparator controls, current statutory/policy anchors, methodology, later-treatment safeguards and explicit limits on what the table does not establish.
 
