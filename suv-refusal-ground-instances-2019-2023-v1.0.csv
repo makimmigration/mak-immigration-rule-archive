@@ -1,0 +1,12 @@
+ircc_source_label,2019,2020,2021,2022,2023_to_mar31,total_instances,cross_reference_status,verified_cross_reference,control
+R98(1),42,21,13,18,38,132,unresolved_source_system_code,,"Preserve exact ATI label; do not rewrite to R98.01(1) or R98.10(1) without a first-party COGNOS codebook"
+R89,14,0,3,7,3,27,verified_for_dataset_period,"IRPR R89 - artificial transactions","2018 permanent Start-Up Business Class amendment expressly applies R89 to Start-Up Business Class applicants"
+A11(1),0,3,4,3,6,16,verified_direct,"IRPA A11(1)","Application/document requirement before entering Canada"
+A41(a),1,0,4,4,7,16,verified_direct,"IRPA A41(a)","Foreign-national inadmissibility for an act or omission contravening the Act"
+A16(1),1,0,3,2,7,13,verified_direct,"IRPA A16(1)","Truthful answers and production of relevant evidence/documents reasonably required"
+MI SUD-2(5),5,0,0,1,0,6,verified_legacy_instruction,"Start-Up Business Class Ministerial Instructions 2013-2 s.2(5)","Improper-purpose rule; legacy instruction, not a post-2018 current rule"
+A40(1)(a),0,0,4,0,0,4,verified_direct,"IRPA A40(1)(a)","Material misrepresentation/withholding that induces or could induce an error"
+A40(1),0,3,0,0,0,3,provision_verified_only,"IRPA A40(1)","Released label does not identify a paragraph"
+A42(1)(b),0,0,3,0,0,3,verified_direct,"IRPA A42(1)(b)","Accompanying family member of an inadmissible person"
+A89,0,0,0,3,0,3,unresolved_source_system_code,,"Literal IRPA A89 concerns fee regulations; do not invent a substantive refusal-ground meaning"
+TOTAL_INSTANCES,63,27,34,38,61,223,source_total,,"Refusal-ground instances; one application may have more than one ground. 2023 ends March 31."
