@@ -23,3 +23,7 @@ Files:
 - `catalogue.json` — machine-readable metadata
 - `citations.bib` — BibTeX citations
 - `citations.ris` — RIS citations
+
+Authority and reuse controls:
+- [Usman Khalil author profile](https://makimmigration.ca/usman-khalil-rcic/)
+- [MAK research reuse and citation permissions](https://makimmigration.ca/research-reuse-citation-permissions/)
