@@ -53,5 +53,12 @@
   "coverage_note": "Selected material events only. Missing coverage does not mean no rule existed.",
   "source_rule": "Only official government sources can be controlling evidence for published archive events.",
   "date_rule": "Announcement date, observed-from date and effective date are kept separate; effective dates are not inferred from publication dates.",
-  "conflict_rule": "Current official government sources control if they conflict with this archive."
+  "conflict_rule": "Current official government sources control if they conflict with this archive.",
+  "related_research": {
+    "directory": "https://makimmigration.github.io/mak-immigration-rule-archive/related-research/",
+    "catalogue": "https://makimmigration.github.io/mak-immigration-rule-archive/related-research/catalogue.json",
+    "bibtex": "https://makimmigration.github.io/mak-immigration-rule-archive/related-research/citations.bib",
+    "ris": "https://makimmigration.github.io/mak-immigration-rule-archive/related-research/citations.ris",
+    "note": "Adjacent MAK-authored datasets with separate evidence models; not rule-archive events and not independent endorsements."
+  }
 }
