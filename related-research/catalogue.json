@@ -16,7 +16,17 @@
       "concept_doi": "https://doi.org/10.5281/zenodo.23118252",
       "license": "CC BY 4.0",
       "function": "Evidence-status tracker separating current rules, final law, proposals and consultations.",
-      "limitation": "Does not predict final 2027 policy; controlling official sources remain authoritative."
+      "limitation": "Does not predict final 2027 policy; controlling official sources remain authoritative.",
+      "distributions": [
+        {
+          "format": "text/csv",
+          "url": "https://makimmigration.ca/wp-content/uploads/2026/09/DA-R01-2027-Express-Entry-Reform-Evidence-Tracker-CSV.csv"
+        },
+        {
+          "format": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://makimmigration.ca/wp-content/uploads/2026/10/DA-R01-2027-Express-Entry-Reform-Evidence-Tracker-XLSX.xlsx"
+        }
+      ]
     },
     {
       "id": "R02",
@@ -27,7 +37,17 @@
       "concept_doi": "https://doi.org/10.5281/zenodo.23119137",
       "license": "CC BY 4.0",
       "function": "Curated index of completed IRCC ATI request summaries and source-acquisition priorities.",
-      "limitation": "An indexed summary does not establish that MAK received or reviewed the disclosure package."
+      "limitation": "An indexed summary does not establish that MAK received or reviewed the disclosure package.",
+      "distributions": [
+        {
+          "format": "text/csv",
+          "url": "https://makimmigration.ca/wp-content/uploads/2026/10/DA-R02-IRCC-ATIP-Intelligence-Index-CSV.csv"
+        },
+        {
+          "format": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://makimmigration.ca/wp-content/uploads/2026/10/DA-R02-IRCC-ATIP-Intelligence-Index-XLSX.xlsx"
+        }
+      ]
     },
     {
       "id": "R03",
@@ -38,7 +58,17 @@
       "concept_doi": "https://doi.org/10.5281/zenodo.23119702",
       "license": "CC BY 4.0",
       "function": "Reproducible transformation of IRCC invited-candidate data by program and intended province/territory.",
-      "limitation": "Verified coverage through 2026-07-31; 2026 is YTD; IRCC suppression and rounding controls apply."
+      "limitation": "Verified coverage through 2026-07-31; 2026 is YTD; IRCC suppression and rounding controls apply.",
+      "distributions": [
+        {
+          "format": "text/csv",
+          "url": "https://makimmigration.ca/wp-content/uploads/2026/10/DA-R03-Express-Entry-Invited-Candidates-Clean-CSV.csv"
+        },
+        {
+          "format": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://makimmigration.ca/wp-content/uploads/2026/10/DA-R03-Express-Entry-Invited-Candidates-Observatory-XLSX.xlsx"
+        }
+      ]
     }
   ],
   "reuse_url": "https://makimmigration.ca/research-reuse-citation-permissions/"
