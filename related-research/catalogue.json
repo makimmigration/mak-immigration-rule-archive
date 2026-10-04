@@ -1,0 +1,43 @@
+{
+  "name": "MAK Research Datasets Citation & Reuse Directory",
+  "publisher": "MAK Canadian Immigration Services",
+  "creator": {
+    "name": "Usman Khalil"
+  },
+  "generated": "2026-10-04",
+  "records": [
+    {
+      "id": "R01",
+      "title": "2027 Express Entry Reform Evidence Tracker",
+      "version": "2026-09-29",
+      "canonical_url": "https://makimmigration.ca/express-entry-2027-reform-tracker/",
+      "version_doi": "https://doi.org/10.5281/zenodo.23118253",
+      "concept_doi": "https://doi.org/10.5281/zenodo.23118252",
+      "license": "CC BY 4.0",
+      "function": "Evidence-status tracker separating current rules, final law, proposals and consultations.",
+      "limitation": "Does not predict final 2027 policy; controlling official sources remain authoritative."
+    },
+    {
+      "id": "R02",
+      "title": "IRCC ATIP Intelligence Index: Previously Released Immigration Records",
+      "version": "2026-09-26",
+      "canonical_url": "https://makimmigration.ca/ircc-atip-intelligence-index/",
+      "version_doi": "https://doi.org/10.5281/zenodo.23119138",
+      "concept_doi": "https://doi.org/10.5281/zenodo.23119137",
+      "license": "CC BY 4.0",
+      "function": "Curated index of completed IRCC ATI request summaries and source-acquisition priorities.",
+      "limitation": "An indexed summary does not establish that MAK received or reviewed the disclosure package."
+    },
+    {
+      "id": "R03",
+      "title": "Express Entry Invited Candidates Data Observatory: Program and Intended Province Trends",
+      "version": "2026-09-26",
+      "canonical_url": "https://makimmigration.ca/express-entry-invited-candidates-program-province/",
+      "version_doi": "https://doi.org/10.5281/zenodo.23119703",
+      "concept_doi": "https://doi.org/10.5281/zenodo.23119702",
+      "license": "CC BY 4.0",
+      "function": "Reproducible transformation of IRCC invited-candidate data by program and intended province/territory.",
+      "limitation": "Verified coverage through 2026-07-31; 2026 is YTD; IRCC suppression and rounding controls apply."
+    }
+  ]
+}
