@@ -115,6 +115,18 @@ The archive is **not a complete history of Canadian immigration law or policy**.
 
 Research briefs are derived views only. They add no new legal proposition and never replace the current controlling government source.
 
+## Related MAK research datasets
+
+The archive now exposes a separate citation/reuse directory for three MAK-authored research datasets. These are adjacent research objects, not additional rule-archive events, so their evidence models remain separate from the historical rule-event corpus.
+
+- [R01 — 2027 Express Entry Reform Evidence Tracker](related-research/index.html#r01)
+- [R02 — IRCC ATIP Intelligence Index](related-research/index.html#r02)
+- [R03 — Express Entry Invited Candidates Data Observatory](related-research/index.html#r03)
+- [Machine-readable research catalogue](related-research/catalogue.json)
+- [BibTeX citations](related-research/citations.bib) · [RIS citations](related-research/citations.ris)
+
+Each dataset retains its canonical MAK page and persistent Zenodo DOI. The GitHub Pages directory is a discoverability/citation gateway, not a competing DOI repository and not an independent endorsement.
+
 ## Change acceptance gate
 
 A new archive event must have:
