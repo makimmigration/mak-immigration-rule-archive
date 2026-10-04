@@ -2,7 +2,8 @@
   "name": "MAK Research Datasets Citation & Reuse Directory",
   "publisher": "MAK Canadian Immigration Services",
   "creator": {
-    "name": "Usman Khalil"
+    "name": "Usman Khalil",
+    "url": "https://makimmigration.ca/usman-khalil-rcic/"
   },
   "generated": "2026-10-04",
   "records": [
@@ -39,5 +40,6 @@
       "function": "Reproducible transformation of IRCC invited-candidate data by program and intended province/territory.",
       "limitation": "Verified coverage through 2026-07-31; 2026 is YTD; IRCC suppression and rounding controls apply."
     }
-  ]
+  ],
+  "reuse_url": "https://makimmigration.ca/research-reuse-citation-permissions/"
 }
